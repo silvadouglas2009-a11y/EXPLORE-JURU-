@@ -1,0 +1,22 @@
+version: 2
+updates:
+  # Atualiza GitHub Actions semanalmente
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+
+  # Exemplo para npm (ajuste se seu projeto não usa npm)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+
+  # Exemplo para dependências Python (pip) — remova se não se aplica
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
